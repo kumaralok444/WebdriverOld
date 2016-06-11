@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [my suite]">
+  <parameter name="first-name" value="Alok1"/>
+  <test name="testSingleString(failed)">
+    <parameter name="first-name" value="Alok1"/>
+    <classes>
+      <class name="parametrng.ngclass">
+        <methods>
+          <include name="testSingleString" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- parametrng.ngclass -->
+    </classes>
+  </test> <!-- testSingleString(failed) -->
+</suite> <!-- Failed suite [my suite] -->

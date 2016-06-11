@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite1]">
+  <test name="test1(failed)">
+    <groups>
+      <run>
+        <include name="all"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="priya.grouptest">
+        <methods>
+          <include name="testingExitMessage"/>
+          <include name="testprintmessage"/>
+        </methods>
+      </class> <!-- priya.grouptest -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [suite1] -->

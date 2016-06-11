@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Log Suite Example]">
+  <listeners>
+    <listener class-name="testListener.ListnerClass"/>
+  </listeners>
+  <test name="TestNG logs sample(failed)">
+    <classes>
+      <class name="testListener.loggingClass">
+        <methods>
+          <include name="dividedByZero"/>
+          <include name="methodSkip"/>
+        </methods>
+      </class> <!-- testListener.loggingClass -->
+    </classes>
+  </test> <!-- TestNG logs sample(failed) -->
+</suite> <!-- Failed suite [Log Suite Example] -->

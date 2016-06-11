@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="firstsuite">
+<test name="testngPOM">
+<classes>
+<class name="testNG.testngPOM"></class>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [firstsuite]">
+  <test name="testngPOM(failed)">
+    <classes>
+      <class name="testNG.testngPOM">
+        <methods>
+          <include name="testCase"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testNG.testngPOM -->
+    </classes>
+  </test> <!-- testngPOM(failed) -->
+</suite> <!-- Failed suite [firstsuite] -->

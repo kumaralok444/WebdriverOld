@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Log Suite Example" duration-ms="31" started-at="2015-11-04T09:06:20Z" finished-at="2015-11-04T09:06:20Z">
+    <groups>
+    </groups>
+    <test name="TestNG logs sample" duration-ms="31" started-at="2015-11-04T09:06:20Z" finished-at="2015-11-04T09:06:20Z">
+      <class name="testListener.loggingClass">
+        <test-method status="PASS" signature="methodAddingNumbers()[pri:0, instance:testListener.loggingClass@120ba90]" name="methodAddingNumbers" duration-ms="31" started-at="2015-11-04T14:36:20Z" finished-at="2015-11-04T14:36:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodAddingNumbers -->
+        <test-method status="SKIP" signature="methodSkip()[pri:0, instance:testListener.loggingClass@120ba90]" name="methodSkip" duration-ms="0" started-at="2015-11-04T14:36:20Z" depends-on-methods="testListener.loggingClass.dividedByZero" finished-at="2015-11-04T14:36:20Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method loggingClass.methodSkip()[pri:0, instance:testListener.loggingClass@120ba90] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method loggingClass.methodSkip()[pri:0, instance:testListener.loggingClass@120ba90] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1067)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSkip -->
+        <test-method status="FAIL" signature="dividedByZero()[pri:0, instance:testListener.loggingClass@120ba90]" name="dividedByZero" duration-ms="0" started-at="2015-11-04T14:36:20Z" finished-at="2015-11-04T14:36:20Z">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+	at testListener.loggingClass.dividedByZero(loggingClass.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dividedByZero -->
+      </class> <!-- testListener.loggingClass -->
+    </test> <!-- TestNG logs sample -->
+  </suite> <!-- Log Suite Example -->
+</testng-results>

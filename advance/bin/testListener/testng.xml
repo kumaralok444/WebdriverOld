@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Log Suite Example" verbose="1">
+	<listeners>
+		<listener class-name="testListener.ListnerClass" />
+	</listeners>
+
+	<test name="TestNG logs sample" preserve-order="true">
+		<classes>
+			<class name="testListener.loggingClass">
+				<methods>
+					<include name="methodAddingNumbers" />
+					<include name="dividedByZero" />
+					<include name="methodSkip" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
